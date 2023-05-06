@@ -46,11 +46,16 @@ const CommentBox = ({ data }) => {
     <Popover
       id={id}
       open={open}
-      anchorEl={anchorEl}
       onClose={handleClose}
-      anchorPosition={{ top: 200, left: 440, position: "absolute" }}
-      anchorOrigin={{ vertical: "left", horizontal: "top" }}
-      transformOrigin={{}}
+      anchorReference="anchorPosition"
+      anchorPosition={{ bottom: 0, right: 0 }}
+      PaperProps={{
+        style: {
+          position: "fixed",
+          bottom: 2,
+          right: 2,
+        },
+      }}
     >
       <div className="main-container">
         <div className="heading">
