@@ -1,0 +1,91 @@
+.main-container {
+  background-color: #7c7c7c;
+  width: 450px;
+  position: fixed;
+  right: 16px;
+  bottom: 0;
+  padding: 1rem;
+  color: #ffffff;
+  h4 {
+    margin: 8px 0px;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    &__cross-icon {
+      background: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+  }
+  hr {
+    margin-block: 0.8rem;
+    height: 1px;
+  }
+
+  .cmnt-section {
+    textarea {
+      height: 130px;
+      width: 100%;
+      resize: none;
+      border-radius: 4px;
+      padding: 8px;
+      outline: none;
+    }
+    &__action-btns {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      margin: 0.5rem 0px;
+      &--save-btn,
+      &--cancel-btn {
+        background-color: #e2e2e2;
+        color: #414141;
+        &:hover {
+          background: #e2e2e2;
+        }
+      }
+      &--cancel-btn {
+        color: #2422d5;
+        border: 1px solid #2422d5;
+      }
+    }
+  }
+  .cmnt-msg {
+    &__comments-cont {
+      min-height: 450px;
+      max-height: 450px;
+      overflow: auto;
+    }
+    &__cmnt-msg-text {
+      padding: 0.7rem;
+      border-radius: 4px;
+      background: #ebebeb;
+      color: #000;
+      margin: 12px 0px;
+
+      &--date-and-time {
+        color: darkgray;
+        padding-right: 8px;
+      }
+      &--text {
+        font-size: 14px;
+        font-weight: 500;
+        word-spacing: 1px;
+      }
+      &--date-time-wrapper {
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.pop-over {
+  position: fixed !important;
+  background-color: lightblue;
+  right: 16px;
+  bottom: 0;
+}
