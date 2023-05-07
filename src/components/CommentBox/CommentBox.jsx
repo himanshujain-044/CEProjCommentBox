@@ -26,12 +26,12 @@ const CommentBox = ({ data }) => {
   return (
     <div className="comment-box-container">
       <div className="cmnt-heading">
-        <h3>Comment</h3>
+        <span>Comment</span>
         <button className="cmnt-heading__cross-icon">X</button>
       </div>
       <hr />
       <div className="cmnt-section">
-        <h4>Add Comment</h4>
+        <span>Add Comment</span>
         <textarea id="text-area" placeholder="start typing..." />
         <div className="cmnt-section__action-btns">
           <Button
@@ -50,7 +50,7 @@ const CommentBox = ({ data }) => {
       </div>
       <hr />
       <div className="cmnt-msg">
-        <h4>Earlier Comments ({data.length ? data.length : 0})</h4>
+        <span>Earlier Comments ({data.length ? data.length : 0})</span>
         <div className="cmnt-msg__comments-cont">
           {data.length &&
             data.map((item) => (
