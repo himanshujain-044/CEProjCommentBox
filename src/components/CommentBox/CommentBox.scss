@@ -1,8 +1,8 @@
 .comment-box-container {
   background-color: #7c7c7c;
-  width: 450px;
+  width: 330px;
   position: fixed;
-  right: 16px;
+  right: 0.5rem;
   bottom: 0;
   padding: 1rem;
   color: #ffffff;
@@ -15,43 +15,50 @@
       border: none;
       color: inherit;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
     span {
-      font-size: 20px;
+      font-size: 0.8rem;
       font-weight: 700;
     }
   }
   hr {
-    margin-block: 0.8rem;
+    margin-block: 0.6rem;
     height: 1px;
   }
   .cmnt-section,
   .cmnt-msg {
     span {
-      margin: 8px 0px;
+      margin-top: 0.4rem;
       display: block;
       font-weight: 700;
+      font-size: 0.7rem;
     }
   }
   .cmnt-section {
     textarea {
-      height: 130px;
+      height: 5rem;
       width: 100%;
       resize: none;
       border-radius: 4px;
       padding: 8px;
       outline: none;
+      font-size: 0.7rem;
+      margin-top: 0.4rem;
     }
     &__action-btns {
       display: flex;
       justify-content: flex-end;
+
       gap: 1rem;
       margin: 0.5rem 0px;
       &--save-btn,
       &--cancel-btn {
         background-color: #e2e2e2;
         color: #414141;
+        height: 1.6rem;
+        width: 1.1rem;
+        font-size: 0.7rem;
         &:hover {
           background: #e2e2e2;
         }
@@ -64,8 +71,8 @@
   }
   .cmnt-msg {
     &__comments-cont {
-      min-height: 450px;
-      max-height: 450px;
+      min-height: 260px;
+      max-height: 260px;
       overflow: auto;
     }
     &__cmnt-msg-text {
@@ -78,15 +85,18 @@
       &--date-and-time {
         color: darkgray;
         padding-right: 8px;
+        display: inline !important;
       }
       &--text {
-        font-size: 14px;
+        font-size: 0.7rem;
         font-weight: 500;
-        word-spacing: 1px;
       }
       &--date-time-wrapper {
-        margin-top: 10px;
-        font-size: 13px;
+        span {
+          font-size: 0.6rem;
+        }
+        margin-top: 0.2rem;
+
         font-weight: 700;
       }
     }
